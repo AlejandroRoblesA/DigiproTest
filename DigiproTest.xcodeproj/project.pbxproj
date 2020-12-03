@@ -8,9 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0FC386C325799F6900F3879E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FC386C225799F6900F3879E /* AppDelegate.swift */; };
-		0FC386C525799F6900F3879E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FC386C425799F6900F3879E /* SceneDelegate.swift */; };
 		0FC386C725799F6900F3879E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FC386C625799F6900F3879E /* ViewController.swift */; };
-		0FC386CA25799F6900F3879E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FC386C825799F6900F3879E /* Main.storyboard */; };
 		0FC386CD25799F6900F3879E /* DigiproTest.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0FC386CB25799F6900F3879E /* DigiproTest.xcdatamodeld */; };
 		0FC386CF25799F6A00F3879E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0FC386CE25799F6A00F3879E /* Assets.xcassets */; };
 		0FC386D225799F6A00F3879E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FC386D025799F6A00F3879E /* LaunchScreen.storyboard */; };
@@ -19,9 +17,7 @@
 /* Begin PBXFileReference section */
 		0FC386BF25799F6900F3879E /* DigiproTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DigiproTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FC386C225799F6900F3879E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0FC386C425799F6900F3879E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		0FC386C625799F6900F3879E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		0FC386C925799F6900F3879E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0FC386CC25799F6900F3879E /* DigiproTest.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DigiproTest.xcdatamodel; sourceTree = "<group>"; };
 		0FC386CE25799F6A00F3879E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0FC386D125799F6A00F3879E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -59,9 +55,7 @@
 			isa = PBXGroup;
 			children = (
 				0FC386C225799F6900F3879E /* AppDelegate.swift */,
-				0FC386C425799F6900F3879E /* SceneDelegate.swift */,
 				0FC386C625799F6900F3879E /* ViewController.swift */,
-				0FC386C825799F6900F3879E /* Main.storyboard */,
 				0FC386CE25799F6A00F3879E /* Assets.xcassets */,
 				0FC386D025799F6A00F3879E /* LaunchScreen.storyboard */,
 				0FC386D325799F6A00F3879E /* Info.plist */,
@@ -129,7 +123,6 @@
 			files = (
 				0FC386D225799F6A00F3879E /* LaunchScreen.storyboard in Resources */,
 				0FC386CF25799F6A00F3879E /* Assets.xcassets in Resources */,
-				0FC386CA25799F6900F3879E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,21 +136,12 @@
 				0FC386C725799F6900F3879E /* ViewController.swift in Sources */,
 				0FC386C325799F6900F3879E /* AppDelegate.swift in Sources */,
 				0FC386CD25799F6900F3879E /* DigiproTest.xcdatamodeld in Sources */,
-				0FC386C525799F6900F3879E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		0FC386C825799F6900F3879E /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0FC386C925799F6900F3879E /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		0FC386D025799F6A00F3879E /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -220,7 +204,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -275,7 +259,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -292,6 +276,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = DigiproTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -310,6 +295,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = DigiproTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
