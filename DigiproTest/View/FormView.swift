@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import CoreData
 
 //MARK: - Class
 class FormViewController: UIViewController {

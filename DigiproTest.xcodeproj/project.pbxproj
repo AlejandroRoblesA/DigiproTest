@@ -14,7 +14,7 @@
 		0FC386CF25799F6A00F3879E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0FC386CE25799F6A00F3879E /* Assets.xcassets */; };
 		0FC386D225799F6A00F3879E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FC386D025799F6A00F3879E /* LaunchScreen.storyboard */; };
 		0FC386E62579C5F700F3879E /* FormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FC386E52579C5F700F3879E /* FormView.swift */; };
-		0FC386E92579C65A00F3879E /* FormModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FC386E82579C65A00F3879E /* FormModel.swift */; };
+		0FF5E2A9257C1E2600808E1F /* UsersController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF5E2A8257C1E2600808E1F /* UsersController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,7 +27,7 @@
 		0FC386D125799F6A00F3879E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0FC386D325799F6A00F3879E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0FC386E52579C5F700F3879E /* FormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormView.swift; sourceTree = "<group>"; };
-		0FC386E82579C65A00F3879E /* FormModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormModel.swift; sourceTree = "<group>"; };
+		0FF5E2A8257C1E2600808E1F /* UsersController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,7 +65,6 @@
 				0FC386E22579ACB300F3879E /* View */,
 				0FC386E32579ACD100F3879E /* Controller */,
 				0FC386D325799F6A00F3879E /* Info.plist */,
-				0FC386CB25799F6900F3879E /* DigiproTest.xcdatamodeld */,
 			);
 			path = DigiproTest;
 			sourceTree = "<group>";
@@ -73,7 +72,7 @@
 		0FC386E12579ACA700F3879E /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				0FC386E82579C65A00F3879E /* FormModel.swift */,
+				0FC386CB25799F6900F3879E /* DigiproTest.xcdatamodeld */,
 				0F3120A4257AB9E600BDDE70 /* DigiproColors.swift */,
 			);
 			path = Model;
@@ -93,6 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				0FC386C625799F6900F3879E /* FormController.swift */,
+				0FF5E2A8257C1E2600808E1F /* UsersController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -170,7 +170,7 @@
 				0FC386E62579C5F700F3879E /* FormView.swift in Sources */,
 				0FC386C725799F6900F3879E /* FormController.swift in Sources */,
 				0FC386C325799F6900F3879E /* AppDelegate.swift in Sources */,
-				0FC386E92579C65A00F3879E /* FormModel.swift in Sources */,
+				0FF5E2A9257C1E2600808E1F /* UsersController.swift in Sources */,
 				0FC386CD25799F6900F3879E /* DigiproTest.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

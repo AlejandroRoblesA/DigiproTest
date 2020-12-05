@@ -17,8 +17,17 @@ extension FormViewController{
         setupView()
     }
     
+    override func viewWillDisappear(_ animated: Bool) {
+        nameTextField.text = nil
+        lastNameTextField.text = nil
+        maternalSurnameTextField.text = nil
+        emailTextField.text = nil
+        phoneNumberTextField.text = nil
+    }
+    
     //MARK: - Functions
     func setupView(){
+        navigationItem.title = "Formulario"
         view.backgroundColor = DigiproColors().background
         phoneNumberTextField.delegate = self
         setupConstraints()
@@ -31,6 +40,10 @@ extension FormViewController{
         }
         else{
             if (isValidEmail(email: emailTextField.text!)){
+                saveData()
+                
+                let user =  UsersController()
+                navigationController?.pushViewController(user, animated: true)
                 print("Información agregada a la base de datos")
             }
             else{
@@ -78,6 +91,24 @@ extension FormViewController{
 
         let emailTest = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
         return emailTest.evaluate(with: email)
+    }
+    
+    func saveData(){
+
+        let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+        let form = Form(context: context)
+        form.name = nameTextField.text
+        form.lastName = lastNameTextField.text
+        form.maternalSurname = maternalSurnameTextField.text
+        form.email = emailTextField.text
+        form.phone = phoneNumberTextField.text
+        
+        do{
+            try context.save()
+        }
+        catch{
+            print(error.localizedDescription)
+        }
     }
 }
 //MARK: - TextFieldDelegate
